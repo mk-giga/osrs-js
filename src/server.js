@@ -10,7 +10,12 @@ function main() {
 }
 
 function initHttp() {
-    app.use(express.static(__dirname + "/src/public/index.html"));
+    app.use(express.static(__dirname + "/public"));
+    
+    app.get("/", (req, res) => {
+        console.log("test");
+        res.status(200).sendFile(__dirname + "/public/index.html");
+    });
 }
 
 function initSocket() {
@@ -21,7 +26,7 @@ function start() {
     server.listen(3000, () => {
         console.log('listening on *:3000');
     });
-    
+
 }
 
 main();

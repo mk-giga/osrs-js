@@ -1,20 +1,18 @@
 class EntityAction {
-    action: number
-    constructor(action: number) {
+    action;
+    constructor(action) {
         this.action = action;
     }
 }
 
 class EntityActionPacket {
-    t: number
-    action: EntityActions
-    constructor(t: number, action: EntityActions) {
+    constructor(t, action) {
         this.t = t; // time of sending the packet
         this.action = action;
     }
 }
 
-enum EntityActions {
+const entityActions = {
     WALK_HERE,
     ATTACK,
     EXAMINE,

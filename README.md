@@ -1,4 +1,11 @@
 # osrs-js
+ ____  ____  _     
+|  _ \/ ___|(_)___ 
+| |_) \___ \| / __|
+|  _ < ___) | \__ \
+|_| \_\____// |___/
+          |__/     
+          
 An OSRS Client & Server implementation in TypeScript & JS.
 
 # Goal
