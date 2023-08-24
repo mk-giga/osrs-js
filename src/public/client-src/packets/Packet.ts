@@ -9,40 +9,82 @@
  * @param args A dictionary with key-value pairs.
  */
 
-interface Packet {
+interface IPacket {
     t: number
 }
 
-class MousePacket implements Packet {
+class MousePacket implements IPacket {
     t: number
     x: number
     y: number
+    constructor(t: number, x: number, y: number) {
+        this.t = t
+        this.x = x
+        this.y = y
+    }
 }
 
-class WalkPacket implements Packet {
+class WalkPacket implements IPacket {
     t: number
     x: number
     y: number
     z: number
+    constructor(
+        t: number,
+        x: number,
+        y: number,
+        z: number
+    ) {
+        this.t = t
+        this.x = x
+        this.y = y
+        this.z = z
+    }
 }
 
-class TradeWithPacket implements Packet {
+class AttackPacket implements IPacket {
     t: number
     target: number
+    constructor(t: number, target: number) {
+        this.t = t
+        this.target = target
+    }
 }
 
-class ExaminePacket implements Packet {
+class TradeWithPacket implements IPacket {
     t: number
     target: number
+    constructor(t: number, target: number) {
+        this.t = t
+        this.target = target
+    }
 }
 
-class EquipItemPacket implements Packet {
+class ExaminePacket implements IPacket {
+    t: number
+    target: number
+    constructor(t: number, target: number) {
+        this.t = t
+        this.target = target
+    }
+}
+
+class EquipItemPacket implements IPacket {
     t: number
     item: number
     slot: number
+    constructor(t: number, item: number, slot: number) {
+        this.t = t
+        this.item = item
+        this.slot = slot
+    }
 }
 
-class UnequipItemPacket implements Packet {
+class UnequipItemPacket implements IPacket {
     t: number
     slot: number
+    constructor(t: number, slot: number) {
+        this.t = t
+        this.slot = slot
+    }
 }
