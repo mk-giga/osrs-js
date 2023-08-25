@@ -1,4 +1,3 @@
-# osrs-js
 ```
  ____  ____  _     
 |  _ \/ ___|(_)___ 
@@ -6,21 +5,25 @@
 |  _ < ___) | \__ \
 |_| \_\____// |___/
           |__/     
+A JavaScript implementation of Oldschool RuneScape.
 ```
 
-An OSRS Client & Server implementation in TypeScript & JS.
+# About
+This project aims to provide an implementation of Oldschool RuneScape that is playable directly in your web browser while staying true to the authentic Oldschool RuneScape experience, ensuring that neither the server nor the client contains any extraneous features or bloat that deviates from the original game.
 
-# Goal
-To have a basic, easy-to-work-with implementation of Oldschool RuneScape that is playable in the web browser. The server and client should not contain any extra bloat/features over what you would find in Oldschool Runescape.
+# What this project is not:
+* A game with all the content updates found in the live game.
+* A private server focused on custom content updates.
+* A browser client for Oldschool RuneScape.
 
 # Dependencies
 * NodeJS
-* Express
+* Express.js
 * Socket.io
 * Three.js
   
 # Contribution
-The main contributors are [mk-giga][user1] and [thinkfast999][user2].
+The primary contributors are [mk-giga][user1] and [thinkfast999][user2]. If you'd like to contribute, feel free to get in touch by sending either of us a message.
 
 # License
 Undecided as of now.
