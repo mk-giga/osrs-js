@@ -23,8 +23,8 @@ function initSocket() {
 }
 
 function start() {
-    server.listen(3000, () => {
-        console.log('listening on *:3000');
+    server.listen(9603, () => {
+        console.log('listening on *:9603');
     });
 
 }
